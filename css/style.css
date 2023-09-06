@@ -4,71 +4,84 @@ svg {
     overflow:visible;
 }
 
+/*
+--moonstone: #81b0b6ff;
+--antiflash-white: #ebebebff;
+--imperial-red: #e84242ff;
+--lapis-lazuli: #30638eff;
+--indigo-dye: #003d5bff;
+BLUES
+
+--moonstone: #81b0b6ff;
+--antiflash-white: #ebebebff;
+--imperial-red: #e84242ff;
+--wenge: #56494eff;
+--dark-purple: #1e152aff;
+GRAY+PURPLE
+*/
+
+
+
+
 /* Venn Diagram */
+
 
 #D{
    /* fill: #8C8AF7;*/
-   fill:blue;
-   opacity: 40%;
+   fill:#81b0b6;
 }
 #D:hover{
-    fill:blue;
-    opacity: 70%;
+    fill:none;
+    stroke: #81b0b6;
+  
 }
 
 #DC{
-    fill:violet;
-    opacity: 40%;
+    fill:#B5797C;
 }
 #DC:hover{
-    fill:violet;
-    opacity: 70%;
+    fill:none;
+    stroke: #B5797C;
 }
 
 #C{
-    fill: red;
-    opacity: 40%;
+    fill: #e84242;
 }
 #C:hover{
-    fill:red;
-    opacity: 70%;
+    fill:none;
+    stroke: #e84242;
 }
 
 #CW{
-    fill: orange;
-    opacity: 40%;
-    
+    fill: #9F4648;
 }
 #CW:hover{
-    fill:orange;
-    opacity: 70%;
+    fill:none;
+    stroke: #9F4648;
 }
 
 #W{
-    fill: yellow;
-    opacity: 40%;
+    fill: #56494e;
 }
 #W:hover{
-    fill:yellow;
-    opacity: 70%;
+    fill:none;
+    stroke: #56494e;
 }
 
 #WD{
-    fill: green;
-    opacity: 40%;
+    fill:#6C7D82;
 }
 #WD:hover{
-    fill:green;
-    opacity: 70%;
+    fill: none;
+    stroke: #6C7D82;
 }
 
 #DCW{
-    fill: purple;
-    opacity: 40%;
+    fill: #866165;
 }
 #DCW:hover{
-    fill:purple;
-    opacity: 70%;
+    fill: none;
+    stroke: #866165;
 }
 
 /* Titles, Paragraphs, Headings */
@@ -160,9 +173,78 @@ h1 {
     padding-top: 160px;
 }
 
+.arrowBox{
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70%;
+  }
 
+main {
+    overflow-y: scroll;
+}
+
+  .aside{
+    flex: .45 0 10%;
+    width: 10%;
+
+  }
+
+  .wrapper{
+    display: flex;
+    height: 100%;
+  }
+
+  .ulBar {
+    padding-left: 10px;
+    padding-top: 160px;
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: sticky;
+    top: 8em;
+  }
+
+  .liStyle{
+    margin-top: 15px;
+  }
+
+  .wrapper_inner {
+    width: 90%;
+    margin: 0px;
+  }
+
+.projects{
+    padding-top: 120px;
+}
+
+.imageWine{
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    height: auto;
+    display: block;
+  }
+
+  .pLCBox{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    margin-left: 15%;
+    margin-right: 15%;
+    width:70%;
+  }
 
 /* Links, Buttons, Inputs */
+
+
+
+html{
+    background: #EBEBEB;
+}
 
 a{
     font-family: brother-1816, sans-serif;
@@ -181,13 +263,17 @@ a{
   
   hr {
     border-width: 1px;
-    border-color: #81B0B6;
+    border-color: #e84242;
     border-style: solid;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 100%;
+    /*margin-left: 20%;
+    margin-right: 20%;*/
     padding-top: 1px;
     margin-top: 20px;
+  }
+
+  hr.lineNotSelected{
+    width: 50%;
   }
   
   ul {
